@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsBattaglia" targetNamespace="http://tempuri.org/dsBattaglia.xsd" xmlns:mstns="http://tempuri.org/dsBattaglia.xsd" xmlns="http://tempuri.org/dsBattaglia.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsBattaglia" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsBattaglia" msprop:Generator_UserDSName="dsBattaglia">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Categorie_Fotogallery" msprop:Generator_UserTableName="Categorie_Fotogallery" msprop:Generator_RowEvArgName="Categorie_FotogalleryRowChangeEvent" msprop:Generator_TableVarName="tableCategorie_Fotogallery" msprop:Generator_TablePropName="Categorie_Fotogallery" msprop:Generator_RowDeletingName="Categorie_FotogalleryRowDeleting" msprop:Generator_RowChangingName="Categorie_FotogalleryRowChanging" msprop:Generator_RowDeletedName="Categorie_FotogalleryRowDeleted" msprop:Generator_TableClassName="Categorie_FotogalleryDataTable" msprop:Generator_RowChangedName="Categorie_FotogalleryRowChanged" msprop:Generator_RowEvHandlerName="Categorie_FotogalleryRowChangeEventHandler" msprop:Generator_RowClassName="Categorie_FotogalleryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IDCategoria" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnIDCategoria" msprop:Generator_ColumnPropNameInRow="IDCategoria" msprop:Generator_ColumnPropNameInTable="IDCategoriaColumn" msprop:Generator_UserColumnName="IDCategoria" type="xs:int" />
+              <xs:element name="NomeCategoria" msprop:Generator_ColumnVarNameInTable="columnNomeCategoria" msprop:Generator_ColumnPropNameInRow="NomeCategoria" msprop:Generator_ColumnPropNameInTable="NomeCategoriaColumn" msprop:Generator_UserColumnName="NomeCategoria" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Fotografie" msprop:Generator_UserTableName="Fotografie" msprop:Generator_RowEvArgName="FotografieRowChangeEvent" msprop:Generator_TableVarName="tableFotografie" msprop:Generator_TablePropName="Fotografie" msprop:Generator_RowDeletingName="FotografieRowDeleting" msprop:Generator_RowChangingName="FotografieRowChanging" msprop:Generator_RowDeletedName="FotografieRowDeleted" msprop:Generator_TableClassName="FotografieDataTable" msprop:Generator_RowChangedName="FotografieRowChanged" msprop:Generator_RowEvHandlerName="FotografieRowChangeEventHandler" msprop:Generator_RowClassName="FotografieRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IDFotografia" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnIDFotografia" msprop:Generator_ColumnPropNameInRow="IDFotografia" msprop:Generator_ColumnPropNameInTable="IDFotografiaColumn" msprop:Generator_UserColumnName="IDFotografia" type="xs:int" />
+              <xs:element name="IDCategoria" msprop:Generator_ColumnVarNameInTable="columnIDCategoria" msprop:Generator_ColumnPropNameInRow="IDCategoria" msprop:Generator_ColumnPropNameInTable="IDCategoriaColumn" msprop:Generator_UserColumnName="IDCategoria" type="xs:int" minOccurs="0" />
+              <xs:element name="UrlFoto" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="UrlFoto" msprop:Generator_ColumnVarNameInTable="columnUrlFoto" msprop:Generator_ColumnPropNameInTable="UrlFotoColumn" msprop:Generator_UserColumnName="UrlFoto" type="xs:string" minOccurs="0" />
+              <xs:element name="Didascalia" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Didascalia" msprop:Generator_ColumnVarNameInTable="columnDidascalia" msprop:Generator_ColumnPropNameInTable="DidascaliaColumn" msprop:Generator_UserColumnName="Didascalia" type="xs:string" minOccurs="0" />
+              <xs:element name="DataCreazione" msprop:Generator_ColumnVarNameInTable="columnDataCreazione" msprop:Generator_ColumnPropNameInRow="DataCreazione" msprop:Generator_ColumnPropNameInTable="DataCreazioneColumn" msprop:Generator_UserColumnName="DataCreazione" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PrimoPiano" msprop:Generator_ColumnVarNameInTable="columnPrimoPiano" msprop:Generator_ColumnPropNameInRow="PrimoPiano" msprop:Generator_ColumnPropNameInTable="PrimoPianoColumn" msprop:Generator_UserColumnName="PrimoPiano" type="xs:boolean" minOccurs="0" />
+              <xs:element name="SecondoPiano" msprop:Generator_ColumnVarNameInTable="columnSecondoPiano" msprop:Generator_ColumnPropNameInRow="SecondoPiano" msprop:Generator_ColumnPropNameInTable="SecondoPianoColumn" msprop:Generator_UserColumnName="SecondoPiano" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Categorie_Video" msprop:Generator_UserTableName="Categorie_Video" msprop:Generator_RowEvArgName="Categorie_VideoRowChangeEvent" msprop:Generator_TableVarName="tableCategorie_Video" msprop:Generator_TablePropName="Categorie_Video" msprop:Generator_RowDeletingName="Categorie_VideoRowDeleting" msprop:Generator_RowChangingName="Categorie_VideoRowChanging" msprop:Generator_RowDeletedName="Categorie_VideoRowDeleted" msprop:Generator_TableClassName="Categorie_VideoDataTable" msprop:Generator_RowChangedName="Categorie_VideoRowChanged" msprop:Generator_RowEvHandlerName="Categorie_VideoRowChangeEventHandler" msprop:Generator_RowClassName="Categorie_VideoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IDCategoria" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnIDCategoria" msprop:Generator_ColumnPropNameInRow="IDCategoria" msprop:Generator_ColumnPropNameInTable="IDCategoriaColumn" msprop:Generator_UserColumnName="IDCategoria" type="xs:int" />
+              <xs:element name="NomeCategoria" msprop:Generator_ColumnVarNameInTable="columnNomeCategoria" msprop:Generator_ColumnPropNameInRow="NomeCategoria" msprop:Generator_ColumnPropNameInTable="NomeCategoriaColumn" msprop:Generator_UserColumnName="NomeCategoria" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Video" msprop:Generator_UserTableName="Video" msprop:Generator_RowEvArgName="VideoRowChangeEvent" msprop:Generator_TableVarName="tableVideo" msprop:Generator_TablePropName="Video" msprop:Generator_RowDeletingName="VideoRowDeleting" msprop:Generator_RowChangingName="VideoRowChanging" msprop:Generator_RowDeletedName="VideoRowDeleted" msprop:Generator_TableClassName="VideoDataTable" msprop:Generator_RowChangedName="VideoRowChanged" msprop:Generator_RowEvHandlerName="VideoRowChangeEventHandler" msprop:Generator_RowClassName="VideoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IDVideo" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnIDVideo" msprop:Generator_ColumnPropNameInRow="IDVideo" msprop:Generator_ColumnPropNameInTable="IDVideoColumn" msprop:Generator_UserColumnName="IDVideo" type="xs:int" />
+              <xs:element name="IDCategoria" msprop:Generator_ColumnVarNameInTable="columnIDCategoria" msprop:Generator_ColumnPropNameInRow="IDCategoria" msprop:Generator_ColumnPropNameInTable="IDCategoriaColumn" msprop:Generator_UserColumnName="IDCategoria" type="xs:int" minOccurs="0" />
+              <xs:element name="UrlVideo" msprop:Generator_ColumnVarNameInTable="columnUrlVideo" msprop:Generator_ColumnPropNameInRow="UrlVideo" msprop:Generator_ColumnPropNameInTable="UrlVideoColumn" msprop:Generator_UserColumnName="UrlVideo" type="xs:string" minOccurs="0" />
+              <xs:element name="Didascalia" msprop:Generator_ColumnVarNameInTable="columnDidascalia" msprop:Generator_ColumnPropNameInRow="Didascalia" msprop:Generator_ColumnPropNameInTable="DidascaliaColumn" msprop:Generator_UserColumnName="Didascalia" type="xs:string" minOccurs="0" />
+              <xs:element name="DataCreazione" msprop:Generator_ColumnVarNameInTable="columnDataCreazione" msprop:Generator_ColumnPropNameInRow="DataCreazione" msprop:Generator_ColumnPropNameInTable="DataCreazioneColumn" msprop:Generator_UserColumnName="DataCreazione" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UrlMedia" msprop:Generator_ColumnVarNameInTable="columnUrlMedia" msprop:Generator_ColumnPropNameInRow="UrlMedia" msprop:Generator_ColumnPropNameInTable="UrlMediaColumn" msprop:Generator_UserColumnName="UrlMedia" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Categorie_Fotogallery" />
+      <xs:field xpath="mstns:IDCategoria" />
+    </xs:unique>
+    <xs:unique name="Fotografie_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Fotografie" />
+      <xs:field xpath="mstns:IDFotografia" />
+    </xs:unique>
+    <xs:unique name="Categorie_VideoKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Categorie_Video" />
+      <xs:field xpath="mstns:IDCategoria" />
+    </xs:unique>
+    <xs:unique name="VideoKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Video" />
+      <xs:field xpath="mstns:IDVideo" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="Categorie_Fotogallery_Fotografie" msdata:parent="Categorie_Fotogallery" msdata:child="Fotografie" msdata:parentkey="IDCategoria" msdata:childkey="IDCategoria" msprop:Generator_UserChildTable="Fotografie" msprop:Generator_ChildPropName="GetFotografieRows" msprop:Generator_UserParentTable="Categorie_Fotogallery" msprop:Generator_UserRelationName="Categorie_Fotogallery_Fotografie" msprop:Generator_RelationVarName="relationCategorie_Fotogallery_Fotografie" msprop:Generator_ParentPropName="Categorie_FotogalleryRow" />
+      <msdata:Relationship name="Categorie_Video_Video" msdata:parent="Categorie_Video" msdata:child="Video" msdata:parentkey="IDCategoria" msdata:childkey="IDCategoria" msprop:Generator_UserChildTable="Video" msprop:Generator_ChildPropName="GetVideoRows" msprop:Generator_UserParentTable="Categorie_Video" msprop:Generator_UserRelationName="Categorie_Video_Video" msprop:Generator_RelationVarName="relationCategorie_Video_Video" msprop:Generator_ParentPropName="Categorie_VideoRow" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
